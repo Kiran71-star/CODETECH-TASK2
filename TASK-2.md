@@ -1,4 +1,10 @@
-
+NAME: NELAPATI KIRAN
+Company: CODTECH IT SOLUTION 
+ID:CT6WEAC
+DOMAIN: CYBER SECURITY & ETHICAL HACKING
+DURATION: DECEMBER TO FEBRUARY 
+MENTOR: Neela Santhosh Kumar 
+Overview of the project: WEB APPLICATION PENETRATION TESTING
 OVERVIEW FOR THIS
 Sure! Here's an overview of the process for performing web application penetration testing to identify and exploit security vulnerabilities like SQL injection, cross-site scripting (XSS), and insecure authentication mechanisms.
 
